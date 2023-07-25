@@ -1,0 +1,26 @@
+{
+  "name": "rawServer",
+  "version": "1.0.0",
+  "description": "This product is the raw server designed and developed to create api servers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon ./index.js -e js",
+    "start": "pm2 start index.js --name \\\"sarverName\\\" -i max",
+    "stop": "pm2 delete \\\"sarverName\\\""
+  },
+  "author": "Siamak Seifi",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^17.1.1",
+    "axios": "^1.4.0",
+    "cookie-parser": "^1.4.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "helmet": "^3.23.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.25",
+    "node-telegram-bot-api": "^0.61.0"
+  }
+}
