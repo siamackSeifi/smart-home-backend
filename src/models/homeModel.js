@@ -31,30 +31,6 @@ const schema = new mongoose.Schema({
             trim: true
         },
     }],
-    // pills: [{
-    //     name: {
-    //         type: String,
-    //         required: true,
-    //         trim: true
-    //     },
-    //     left: {
-    //         type: Number,
-    //         required: true,
-    //     },
-    //     amount: {
-    //         type: Number,
-    //         required: true,
-    //     },
-    //     every: {
-    //         type: Number,
-    //         required: true,
-    //     },
-    //     tray: {
-    //         type: String,
-    //         required: true,
-    //         enum: ['tray1, tray2, tray3'],
-    //     },
-    // }],
     emergencyCalls: [{
         receiver: {
             type: String,
